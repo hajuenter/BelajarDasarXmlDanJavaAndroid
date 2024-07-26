@@ -45,12 +45,13 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getuser = txtuser.getText().toString();
+                getuser = txtuser.getText().toString(); //mengambil nilai input dari txtuser lalu disimpan ke variabel getuser
                 getpassword = txtpassword.getText().toString();
-
+                //membuat intent
                 Intent gg = new Intent(LoginActivity.this, DashboardActivity.class);
-                gg.putExtra("getusername", getuser);
-                gg.putExtra("getpassword", getpassword);
+                gg.putExtra("getusername", getuser); //mengambil data melalui intent dengan put extra dengan nama key getusername
+                gg.putExtra("getpassword", getpassword); //dan isinya adalah variabel getuser
+                //nama key digunakan untuk mengambil nilai yang nanti dipanggil di activity lain
                 startActivity(gg);
             }
         });
