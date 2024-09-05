@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class DashboardActivity extends AppCompatActivity {
     private TextView setlbluser, setlblpass;
     private String tampilUser, tampilPass;
-    private Button btnfrag1, btnfrag2, btnlist;
+    private Button btnfrag1, btnfrag2, btnlist, btndate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,13 @@ public class DashboardActivity extends AppCompatActivity {
                 startActivity(btnList);
             }
         });
+        btndate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent btndateee = new Intent(DashboardActivity.this, relative_layout.class);
+                startActivity(btndateee);
+            }
+        });
     }
 
     public void inisialisasi_view() {
@@ -59,6 +66,7 @@ public class DashboardActivity extends AppCompatActivity {
         btnfrag1 = findViewById(R.id.btn_f1);
         btnfrag2 = findViewById(R.id.btn_f2);
         btnlist = findViewById(R.id.btn_list);
+        btndate = findViewById(R.id.btn_klik_date);
     }
 
     public void tampil() {

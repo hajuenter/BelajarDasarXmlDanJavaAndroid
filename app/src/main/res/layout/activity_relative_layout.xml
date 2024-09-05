@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:hint="Enter Date"
+        android:minHeight="48dp">
+    </EditText>
+    <Button
+        android:id="@+id/btn_get_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date"
+        android:layout_marginLeft="100dp"
+        android:text="Get Date">
+    </Button>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_get_date"
+        android:textSize="18sp"
+        android:layout_marginLeft="100dp"
+        android:textStyle="bold">
+
+    </TextView>
+</RelativeLayout>
