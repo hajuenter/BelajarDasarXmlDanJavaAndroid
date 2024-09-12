@@ -13,6 +13,9 @@
         android:theme="@style/Theme.BelajarDasarXml"
         tools:targetApi="31">
         <activity
+            android:name=".coba"
+            android:exported="false" />
+        <activity
             android:name=".table_layout"
             android:exported="false" />
         <activity
