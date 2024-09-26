@@ -2,4 +2,13 @@
     <string name="app_name">Belajar Dasar Xml</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="negara_array">
+        <item>Indo</item>
+        <item>Argen</item>
+        <item>Jerman</item>
+        <item>Belanda</item>
+        <item>Arab</item>
+    </string-array>
 </resources>
+
+
